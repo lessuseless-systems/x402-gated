@@ -1,8 +1,0 @@
-warning: Git tree '/persist/home/lessuseless/Projects/Orgs/Circular-Protocol/x402-gated' is dirty
-🚀 x402 Gateway Dev Environment
-Node.js v20.19.5
-npm 10.8.2
-Just just 1.43.1
-
-Run 'just' to see available commands.
-/tmp/nix-shell.8moZWy: line 2180: exec: pnpm: not found
