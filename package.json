@@ -6,9 +6,9 @@
     "scripts": {
         "dev": "wrangler dev",
         "deploy": "wrangler deploy",
+        "build": "wrangler deploy --dry-run --outdir=dist",
         "test": "vitest",
-        "build": "wrangler deploy --outdir=dist",
-        "dry-build": "wrangler deploy --dry-run --outdir=dist"
+        "types": "wrangler types"
     },
     "keywords": [
         "x402",

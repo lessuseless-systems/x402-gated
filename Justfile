@@ -17,6 +17,10 @@ dev:
 # Run local development server with live reload (same as dev)
 start: dev
 
+# Build the worker (dry-run)
+build:
+    npm run build
+
 # Deploy to Cloudflare Workers
 deploy:
     npm run deploy
