@@ -1,0 +1,24 @@
+
+> @circular-protocol/x402-gateway@1.0.0 build
+> wrangler deploy --dry-run --outdir=dist
+
+node:internal/modules/esm/resolve:1204
+    throw error;
+    ^
+
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/persist/home/lessuseless/Projects/Orgs/Circular-Protocol/x402-gated/node_modules/zod/v3/ZodError.js' imported from /persist/home/lessuseless/Projects/Orgs/Circular-Protocol/x402-gated/node_modules/zod/v3/locales/en.js
+    at finalizeResolution (node:internal/modules/esm/resolve:283:11)
+    at moduleResolve (node:internal/modules/esm/resolve:952:10)
+    at defaultResolve (node:internal/modules/esm/resolve:1188:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:708:12)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:657:25)
+    at ModuleLoader.getModuleJobForRequire (node:internal/modules/esm/loader:413:53)
+    at new ModuleJobSync (node:internal/modules/esm/module_job:375:34)
+    at ModuleLoader.getModuleJobForRequire (node:internal/modules/esm/loader:473:11)
+    at new ModuleJobSync (node:internal/modules/esm/module_job:375:34)
+    at ModuleLoader.getModuleJobForRequire (node:internal/modules/esm/loader:473:11) {
+  code: 'ERR_MODULE_NOT_FOUND',
+  url: 'file:///persist/home/lessuseless/Projects/Orgs/Circular-Protocol/x402-gated/node_modules/zod/v3/ZodError.js'
+}
+
+Node.js v20.19.5

@@ -1,0 +1,7 @@
+npm error code ENOTEMPTY
+npm error syscall rename
+npm error path /persist/home/lessuseless/Projects/Orgs/Circular-Protocol/x402-gated/node_modules/react
+npm error dest /persist/home/lessuseless/Projects/Orgs/Circular-Protocol/x402-gated/node_modules/.react-VmjO4jYW
+npm error errno -39
+npm error ENOTEMPTY: directory not empty, rename '/persist/home/lessuseless/Projects/Orgs/Circular-Protocol/x402-gated/node_modules/react' -> '/persist/home/lessuseless/Projects/Orgs/Circular-Protocol/x402-gated/node_modules/.react-VmjO4jYW'
+npm error A complete log of this run can be found in: /home/lessuseless/.npm/_logs/2025-11-23T03_49_21_611Z-debug-0.log
