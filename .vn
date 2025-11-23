@@ -1,0 +1,21 @@
+# Environment variables for local development
+# Copy this file to .env and fill in your values
+
+# Your wallet address that receives x402 payments
+CIRCULAR_WALLET_ADDRESS=0xYourWalletAddress
+
+# Circular Protocol RPC endpoint
+CIRCULAR_RPC_URL=https://rpc.circular.protocol
+
+# x402 facilitator URL
+# Use https://x402.org/facilitator for testnet
+# Use https://facilitator.x402.rs for production
+FACILITATOR_URL=https://x402.org/facilitator
+
+# Network for x402 payments
+# Options: base-sepolia (testnet), base (mainnet), solana-devnet, solana
+X402_NETWORK=base-sepolia
+
+# Client wallet private key (for payment agent)
+# IMPORTANT: Never commit this! Use wrangler secret put in production
+CLIENT_WALLET_PK=0xYourPrivateKey

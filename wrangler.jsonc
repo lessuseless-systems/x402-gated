@@ -1,0 +1,45 @@
+{
+    "name": "circular-x402-gateway",
+    "main": "src/index.ts",
+    "compatibility_date": "2025-03-14",
+    "compatibility_flags": [
+        "nodejs_compat",
+        "nodejs_compat_populate_process_env"
+    ],
+    // Durable Objects for stateful MCP server and payment agent
+    "durable_objects": {
+        "bindings": [
+            {
+                "class_name": "CircularMCP",
+                "name": "CIRCULAR_MCP"
+            },
+            {
+                "class_name": "CircularPayAgent",
+                "name": "CIRCULAR_AGENT"
+            }
+        ]
+    },
+    // Database migrations for Durable Objects
+    "migrations": [
+        {
+            "tag": "v1",
+            "new_sqlite_classes": [
+                "CircularMCP",
+                "CircularPayAgent"
+            ]
+        }
+    ],
+    // Environment variables (override with secrets for production)
+    "vars": {
+        // Your wallet address that receives x402 payments
+        "CIRCULAR_WALLET_ADDRESS": "0xYourCircularWalletAddress",
+        // Circular Protocol RPC endpoint
+        "CIRCULAR_RPC_URL": "https://rpc.circular.protocol",
+        // x402 facilitator URL (use CDP or PayAI)
+        "FACILITATOR_URL": "https://x402.org/facilitator",
+        // Network for x402 payments (base-sepolia for testing, base for production)
+        "X402_NETWORK": "base-sepolia"
+    }
+    // Add secrets via: wrangler secret put CLIENT_WALLET_PK
+    // For production, use: wrangler secret put CIRCULAR_WALLET_ADDRESS
+}

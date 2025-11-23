@@ -1,0 +1,36 @@
+{
+    "name": "@circular-protocol/x402-gateway",
+    "version": "1.0.0",
+    "description": "x402 payment gateway for Circular Protocol using Cloudflare Agents SDK",
+    "type": "module",
+    "scripts": {
+        "dev": "wrangler dev",
+        "deploy": "wrangler deploy",
+        "types": "wrangler types --include-runtime false",
+        "test": "vitest"
+    },
+    "keywords": [
+        "x402",
+        "mcp",
+        "circular-protocol",
+        "cloudflare",
+        "agents",
+        "payments"
+    ],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "@modelcontextprotocol/sdk": "latest",
+        "agents": "latest",
+        "viem": "^2.21.0",
+        "x402": "latest",
+        "zod": "^3.23.0"
+    },
+    "devDependencies": {
+        "@cloudflare/workers-types": "^4.20241127.0",
+        "@types/node": "^22.0.0",
+        "typescript": "^5.6.0",
+        "vitest": "^2.0.0",
+        "wrangler": "^4.50.0"
+    }
+}
